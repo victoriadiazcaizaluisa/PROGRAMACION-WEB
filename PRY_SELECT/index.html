@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SELECT</title>
+
+</head>
+<body>
+    <header>
+        <h1>SELECT EN FORMULARIO</h1>
+    </header>
+    <main>
+        <form action="server.html" method="get">
+        <!--SELECT PARA FORM-->
+        <fieldset>
+        <label for="lenguaje_programacion">SELECCIONE SU LENGUAJE DE PROGRAMACION FAVORITO</label>
+        <select name="lenguaje_programacion" id="lenguaje_programacion">
+           <option value="c_mas_mas">c++</option>
+           <option value="java">java</option>
+           <option value="python">python</option>
+           <option value="HTML" disabled>HTML</option>
+        </select>
+            <input type="date" name="" id="">
+        </fieldset>
+        <br>
+
+        <label for="muscia_fav">SELECCIONE SU MUSICA FAVORITA</label>
+        <select name="muscia_fav[]" id="muscia_fav" multiple required>
+            <option value="LOBA">SHAKIRA LOBA</option>
+            <option value="ANOCHE" selected>BAD BUNNY</option>
+            <option value="ALL_OF_ME" disabled>JOHN LENON</option>
+            <option value="JOSE JOSE">TRISTE</option>
+
+        </select>
+
+        <label for="muscia_fav">SELECCIONE SU MUSICA FAVORITA: </label>
+        <select name="muscia_fav[]" id="muscia_fav" multiple required>
+            <optgroup title="reguetton" label="regueton">
+                <option value="LOBA">SHAKIRA LOBA</option>
+                <option value="ANOCHE" selected>BAD BUNNY</option>
+                <option value="ALL_OF_ME" disabled>JOHN LENON</option>
+                <option value="JOSE JOSE">TRISTE</option>
+            </optgroup>
+            <optgroup title="chicha" label="chicha" multiple required size="2" autofocus>
+                <option value="CHICHA">PAULINA TAMAYO</option>
+                <option value="EN VIDA" selected>GERARDO MORAN</option>
+            </optgroup>
+        </select>
+
+        
+
+        <label for="frase_mot">INGRESE SU FRASE DEL DIA DE HOY: </label>
+        <textarea name="frase_mot" id="frase_mot" cols="10" rows="5" required disabled>BUENOS DIAS CHICOS DE PROGRAMACION</textarea>
+
+        <!--HIDDEN-->
+        <input type="hidden" name="cedula_usuario" value="1727095414">
+        <button type="submit">ENVIAR AL SERVIDOR</button>
+    </form>
+
+    </main>
+    <footer>
+
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,31 @@
+/*input border-radius redondea los bordes*/
+.nombre-texto{
+    border-radius: 15px;
+}
+
+/*textarea text-shadow da sombra al texto que se escriba*/
+.clase-textarea{
+    text-shadow: 5px 5px 5px hotpink;
+
+}
+
+/*select filter aplica efectos de edicion en este caso ajusta el brillo*/
+.clase-select{ 
+    filter: brightness(0.4);
+}
+
+/*checkbox transform permite rotar, escalar o trasladar un elemento, aqui agranda y rota las casillas*/
+.clase-check{
+    transform: scale(1.5) rotate(45deg);
+}
+
+/*radio accent-color: cambia el color del acento, en este caso cambia el color del punto cuando esta seleccionado */
+.clase-radio{
+    accent-color: green;
+ 
+}
+
+
+
+
+

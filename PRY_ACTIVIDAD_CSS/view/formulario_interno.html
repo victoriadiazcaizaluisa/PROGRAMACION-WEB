@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>FORMULARIO INTERNO</title>
+  <style>
+    /*  input: caret-color cambia el color del cursor */
+    input {
+      caret-color: #14ae35;
+    }
+
+    /* textarea: resize controla si el usuario puede cambiar el tamaño, aqui solo cambia en vertical*/
+    textarea {
+      resize: vertical; 
+    }
+
+     /*  select : scrollbar-color cambia el color de la barra de desplazamiento */
+    select {
+      scrollbar-color: rgb(201, 68, 157) rgb(61, 142, 217);
+      
+    }
+
+    /* checkbox: cursor es un puntero que indica al usuario que accion se puede realizar, muestra la mano de seleccionar con el valor pointer */
+    input[type="checkbox"] {
+      cursor: pointer;
+      
+      
+    }
+
+
+    /* radio: propiedad outline-offset separa el contorno del borde */
+    input[type="radio"]:checked {
+      outline: 3px solid orange;
+      outline-offset: 3px;
+    }
+    
+
+  </style>
+</head>
+<body>
+  <h1>Formulario</h1>
+
+  <form action="server.html" method="get">
+
+    <p>
+      <label for="nombre">Nombre:</label>
+      <input type="text" name="nombre" id="nombre" placeholder="Victoria Diaz" required>
+    </p>
+
+    <p>
+      <label for="comentario">Comentario:</label><br>
+      <textarea name="comentario" id="comentario" rows="4" cols="40" placeholder="Escribe un comentario"></textarea>
+    </p>
+
+    <p>
+      <label for="materia">Materia favorita:</label>
+      <select name="materia" id="materia" size="5">
+        <option value="matematicas">Matematicas</option>
+        <option value="historia">Historia</option>
+        <option value="ingles">Ingles</option>
+        <option value="biologia">Biologia</option>
+        <option value="arte">Arte</option>
+      </select>
+    </p>
+
+    <p>
+      <label>Servicios que desea:</label><br>
+      <label><input type="checkbox" name="servicio" value="tutoria"> Tutoría</label>
+      <label><input type="checkbox" name="servicio" value="asesoria"> Asesoría</label>
+      <label><input type="checkbox" name="servicio" value="material"> Material</label>
+    </p>
+
+    <p>
+      <label>Genero:</label><br>
+      <label><input type="radio" name="genero" value="femenino"> Femenino</label>
+      <label><input type="radio" name="genero" value="masculino"> Masculino</label>
+      <label><input type="radio" name="genero" value="otro"> Otro</label>
+    </p>
+
+    <p>
+      <button type="submit">Enviar</button>
+      <button type="reset">Borrar</button>
+    </p>
+
+  </form>
+</body>
+</html>

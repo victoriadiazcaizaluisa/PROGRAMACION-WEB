@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        INTRODUCCION A LOS FORMULARIOS
+    </title>
+</head>
+<body>
+
+    <header>
+        <h1>FORMULARIO PARA INGRESAR DATOS DE UNA PERSONA</h1>
+    </header>
+    <main>
+        <!--FORM-->
+        <form action="server.html" method="get">
+
+            <label for="apellidos">INGRESE SU APELLIDO</label>
+            <input 
+                type="text" 
+                name="apellidos" 
+                id="apellidos"
+                placeholder="Ejm. Diaz"
+                maxlength="5"
+                minlength="3"
+            >
+
+            <label for="nombres"> INGRESE SU NOMBRE</label>
+            <input 
+                type="text" 
+                name="nombres" 
+                id="nombres"
+                placeholder="Ejm. Victoria"
+                maxlength="5"
+                minlength="3"
+            >
+
+            <!--NUMBER-->
+            <label for="edad">INGRESE SU EDAD</label>
+            <input 
+                type="number"
+                name="edad"
+                id="edad"
+                min="5"
+                max="75"
+                placeholder="Ej.20"
+            >
+
+            <!--EMAIL-->
+            <label for="email">INGRESE SU EMAIL</label>
+            <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Ejm cvdiaz3@espe.edu.ec"
+                
+            >
+
+            <!--DATE-->
+            <label for="date">INGRESE SU FECHA DE NACIMIENTO</label>
+            <input 
+                type="date"
+                name="fecha_nacimiento"
+                id="fecha"
+                placeholder="20/03/2003"
+                value="2025-10-20"
+                max="2025-11-24"
+                min="2025-09-18"
+                
+            >
+
+            <!--RADIO-->
+            <label for="">SELECCIONE SU SEXO: </label>
+            <label for="hombre">HOMBRE</label>
+            <input 
+                type="radio" 
+                name="sexo" 
+                id="sexo" 
+                value="HOMBRE"
+                checked
+            >
+            <label for="mujer">MUJER</label>
+            <input 
+                type="radio" 
+                name="sexo" 
+                id="sexo" 
+                value="MUJER"
+                
+            >
+            <label for="mujer">DESCONOCIDO</label>
+            <input 
+                type="radio" 
+                name="sexo" 
+                id="sexo" 
+                value="DESCONOCIDO"
+                disabled
+            >
+            <!--CHECKBOX-->
+            <label for="">SELECCIONE SUS DIAS DE CLASE DE PROGRAMACION WEB: </label>
+            <label for="lunes">LUNES</label>
+            <input 
+                type="checkbox"
+                name="dias[]"
+                id="lunes"
+            >
+
+            <label for="martes">MARTES</label>
+            <input 
+                type="checkbox"
+                name="dias[]"
+                id="martes"
+            >
+
+            <label for="miercoles">MIERCOLES</label>
+            <input 
+                type="checkbox"
+                name="dias[]"
+                id="miercoles"
+            >
+
+            <label for="jueves">JUEVES</label>
+            <input 
+                type="checkbox"
+                name="dias[]"
+                id="jueves"
+            >
+
+            <label for="viernes">VIERNES</label>
+            <input 
+                type="checkbox"
+                name="dias[]"
+                id="viernes"
+            >
+
+            <!--INPUT-->
+            <label for="foto">SUBA SU FOTO DE PERFIL</label>
+            <input 
+                type="file" 
+                name="foto" 
+                id="foto"
+                accept="application/pdf"
+            >
+
+            <label for="color">SELECCIONE SU COLOR FAVORTO</label>
+            <input 
+                type="color" 
+                name="color" 
+                id="color"
+                value="#2190ab"
+            >
+
+            <!--RANGUE-->
+            <label for="estatura">SELECCIONE SU ESTATURA</label>
+            <input 
+                type="range"
+                name="estatura"
+                id="estatura"
+                value="25"
+                min="10"
+                max="250"
+            >
+            <!--SEARCH-->
+            <label for="cedula">BUSCAR POR CEDULA</label>
+            <input 
+                type="search" 
+                name="cedula" 
+                id="cedula"
+            >
+
+            <!--PASSWORD-->
+            <label for="password">INGRESE SU CONTRASEÑA</label>
+            <input 
+                type="password" 
+                name="contraseña" 
+                id="contraseña"
+                placeholder="******"
+            >
+
+           <!--RESET-->
+           <label for="vaciar">VACIAR FORMULARIO</label> 
+           <input 
+                type="reset"
+                name="vaciar"
+                id="vaciar" 
+                value="VACIAR FORMULARIO"
+            >
+
+            <!--SUBMIT-->
+            <label for="enviar">ENVIAR FORMULARIO</label>
+            <input 
+                type="submit" 
+                name="enviar"
+                id="enviar"
+                value="ENVIAR FORMULARIO"
+            >
+
+            
+        </form>
+
+    </main>
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
